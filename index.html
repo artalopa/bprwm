@@ -35,9 +35,9 @@
     	}
     	#nasabah-img {
     		 width: 200px; 
-    		 height: 200px; 
+    		 height: 170px; 
     		 border-radius: 50%; 
-    		 background: white; 
+    		 /*background: white; */
     		 float: left; 
     		 margin-right: 50px;
     	}
@@ -66,6 +66,11 @@
     			margin: 10px 0px;
     		}
     	}
+    	#carousel-content {
+    		background: rgba(0, 0, 0, 0.2);
+    		width: 100%;
+    		height: 500px;
+    	}
     </style>
 </head>
 <body>
@@ -80,20 +85,37 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Perseorangan</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Bisnis</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tentang BTN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tata Kelola</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Karir</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Produk BTN
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Sub Menu</a>
-          <a class="dropdown-item" href="#">Sub Menu</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Sub Menu</a>
+          <a class="dropdown-item" href="#">Produk Dana</a>
+          <a class="dropdown-item" href="#">Kredit Customer</a>
+          <a class="dropdown-item" href="#">Kredit Komersil</a>
+          <a class="dropdown-item" href="#">E-Channel</a>
+          <a class="dropdown-item" href="#">Jasa dan Layanan</a>
+          <a class="dropdown-item" href="#">Program</a>
+          <a class="dropdown-item" href="#">SBDK</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <!-- <a class="dropdown-item" href="#">Sub Menu</a> -->
         </div>
       </li>
     </ul>
@@ -117,18 +139,36 @@
 		  <!-- The slideshow -->
 		  <div class="carousel-inner mdb-color">
 		    <div class="carousel-item active">
-		      <div style="width: 100%; height: 500px; color: white; margin: auto;">
-		      	<h3>Content 1</h3>
+		      <div style="width: 100%; height: 500px; color: white; margin: auto; background: url('https://3.bp.blogspot.com/-XfUFDo7naec/Vr2tqB0VhfI/AAAAAAAADN0/jjWEJWwdoYQ/s1600/Screenshot_2.png'); background-size: cover;">
+		      	<!-- <h3>Content 1</h3> -->
+		      	<!-- <img src="https://3.bp.blogspot.com/-XfUFDo7naec/Vr2tqB0VhfI/AAAAAAAADN0/jjWEJWwdoYQ/s1600/Screenshot_2.png" alt="Pesta KPR BTN"> -->
+		      	<a href="#">
+		      		<div id="carousel-content">
+		      		
+		      		</div>
+		      	</a>
 		      </div>
 		    </div>
 		    <div class="carousel-item">
-		      <div style="width: 100%; height: 500px; color: white; margin: auto;">
-		      	<h3>Content 2</h3>
+		      <div style="width: 100%; height: 500px; color: white; margin: auto; background: url('https://pbs.twimg.com/media/CGts0G6VIAAlzA1.jpg'); background-size: cover;">
+		      	<!-- <h3>Content 2</h3> -->
+		      	<!-- <img src="https://pbs.twimg.com/media/CGts0G6VIAAlzA1.jpg" alt="Program sejuta rumah untuk rakyat"> -->
+		      	<a href="#">
+		      		<div id="carousel-content">
+		      		
+		      		</div>
+		      	</a>
 		      </div>
 		    </div>
 		    <div class="carousel-item">
-		      <div style="width: 100%; height: 500px; color: white; margin: auto;">
-		      	<h3>Content 3</h3>
+		      <div style="width: 100%; height: 500px; color: white; margin: auto; background: url('https://cdn-images-1.medium.com/max/2000/1*IpfdXUyRVkHG6NCr-pbOGA.png'); background-size: cover;">
+		      	<!-- <h3>Content 3</h3> -->
+		      	<!-- <img src="https://cdn-images-1.medium.com/max/2000/1*IpfdXUyRVkHG6NCr-pbOGA.png" alt="Voucher belanja"> -->
+		      	<a href="#">
+		      		<div id="carousel-content">
+		      		
+		      		</div>
+		      	</a>
 		      </div>
 		    </div>
 		  </div>
@@ -145,38 +185,47 @@
 
 <!-- <div class="container"> -->
 	<div class="jumbotron text-center">
-		<h1>Lorem ipsum dolor sit amet</h1><br><br>
+		<h1>Solusi & Produk dari Sahabat Keluarga Indonesia</h1><br><br>
 		<div id="feature" class="card col-md-3 col-sm-12 col-12 d-inline-block" style="">
-			<div id="feature-img" class="card-img-top bg-info" data-toggle="tooltip" data-placement="top" title="Icon yang mewakili fitur"></div>
-		  <!-- <img class="card-img-top" src="img_avatar1.png" alt="Card image"> -->
+			
+		  <img id="feature-img" class="card-img-top" src="images/f1.jpg" alt="Card image">
 		  <div class="card-body">
-		    <h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Judul fitur"><a href="#">Feature 1</a></h4>
-		    <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="Penjelasan fitur">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		    <h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Judul fitur"><a href="#">KPR Bersubsidi</a></h4>
+		    <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="Penjelasan fitur">Dapatkan hunian pertama Anda dengan KPR BTN Subsidi dengan berbagai kemudahan dan biaya yang ringan.</p>
 		  </div>
 		</div>
 
 		<div id="feature" class="card col-md-3 col-sm-12 col-12 d-inline-block" style="">
-			<div id="feature-img" class="card-img-top bg-info" data-toggle="tooltip" data-placement="top" title="Icon yang mewakili fitur"></div>
-		  <!-- <img class="card-img-top" src="img_avatar1.png" alt="Card image"> -->
+			
+		  <img id="feature-img" class="card-img-top" src="images/f2.jpg" alt="Card image">
 		  <div class="card-body">
-		    <h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Judul fitur"><a href="#">Feature 2</a></h4>
-		    <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="Penjelasan fitur">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		    <h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Judul fitur"><a href="#">KRING BTN</a></h4>
+		    <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="Penjelasan fitur">Kredit ringan BTN sebagai solusi ekstra untuk kemudahan memiliki properti idaman anda.</p>
 		  </div>
 		</div>
 
 		<div id="feature" class="card col-md-3 col-sm-12 col-12 d-inline-block" style="">
-			<div id="feature-img" class="card-img-top bg-info" data-toggle="tooltip" data-placement="top" title="Icon yang mewakili fitur"></div>
-		  <!-- <img class="card-img-top" src="img_avatar1.png" alt="Card image"> -->
+			
+		  <img id="feature-img" class="card-img-top" src="images/f3.jpg" alt="Card image">
 		  <div class="card-body">
-		    <h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Judul fitur"><a href="#">Feature 3</a></h4>
-		    <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="Penjelasan fitur">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		    <h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Judul fitur"><a href="#">Kartu Suka-Suka BTN</a></h4>
+		    <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="Penjelasan fitur">Miliki limited edition kartu Debit Bank BTN sesuai dengan apa yang anda inginkan.</p>
+		  </div>
+		</div>
+
+		<div id="feature" class="card col-md-3 col-sm-12 col-12 d-inline-block" style="">
+
+		  <img id="feature-img" class="card-img-top" src="images/f4.jpg" alt="Card image">
+		  <div class="card-body">
+		    <h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Judul fitur"><a href="#">Internet Banking</a></h4>
+		    <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="Penjelasan fitur">Internet Banking memberikan kemudahan dalam melakukan transaksi dimana dan kapan saja.</p>
 		  </div>
 		</div>
 	</div>
 <!-- </div> -->
 
 <div class="container" style="padding-bottom: 4rem;">
-	<h1 class="text-center">Lorem ipsum dolor sit amet</h1><br><br>
+	<h1 class="text-center">Masukan dari Nasabah</h1><br><br>
 	<!-- carousel -->
 		<div id="demo" class="carousel slide" data-ride="carousel" data-toggle="tooltip" data-placement="bottom" title="Bisa diisi dengan feedback atau komentar positif dari nasabah">
 
@@ -192,10 +241,11 @@
 		    <div class="carousel-item active">
 		      <div id="nasabah-wrapper">
 		      	<div id="nasabah">
-		      		<div id="nasabah-img" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Foto nasabah. Jika tidak ada foto, maka akan diganti dengan icon user"></div>
+		      		<!-- <div id="nasabah-img" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Foto nasabah. Jika tidak ada foto, maka akan diganti dengan icon user"></div> -->
+		      		<img id="nasabah-img" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Foto nasabah. Jika tidak ada foto, maka akan diganti dengan icon user" src="https://www.shareicon.net/data/256x256/2016/05/26/771200_man_512x512.png">
 			      	<div id="nasabah-feedback" class="col-md-8">
 			      		<h3 data-toggle="tooltip" data-placement="laft" title="Nama nasabah">John Doe</h3><br>
-			      		<p data-toggle="tooltip" data-placement="right" title="Tanggapan nasabah">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			      		<p data-toggle="tooltip" data-placement="right" title="Tanggapan nasabah">Layanan Bank BTN sangat baik, sudah lama saya menjadi nasabah Bank BTN dan saya sudah merasakan banyak manfaatnya.</p>
 			      	</div>
 		      	</div>
 		      </div>
@@ -203,10 +253,11 @@
 		    <div class="carousel-item">
 		      <div id="nasabah-wrapper">
 		      	<div id="nasabah">
-		      		<div id="nasabah-img" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Foto nasabah. Jika tidak ada foto, maka akan diganti dengan icon user"></div>
+		      		<!-- <div id="nasabah-img" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Foto nasabah. Jika tidak ada foto, maka akan diganti dengan icon user"></div> -->
+		      		<img id="nasabah-img" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Foto nasabah. Jika tidak ada foto, maka akan diganti dengan icon user" src="https://image.flaticon.com/icons/png/128/219/219990.png">
 			      	<div id="nasabah-feedback" class="col-md-8">
 			      		<h3 data-toggle="tooltip" data-placement="left" title="Nama nasabah">Catrina Johnson</h3><br>
-			      		<p data-toggle="tooltip" data-placement="right" title="Tanggapan nasabah">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			      		<p data-toggle="tooltip" data-placement="right" title="Tanggapan nasabah">Menabung di Bank BTN banyak untungnya...</p>
 			      	</div>
 		      	</div>
 		      </div>
@@ -214,10 +265,11 @@
 		    <div class="carousel-item">
 		      <div id="nasabah-wrapper">
 		      	<div id="nasabah">
-		      		<div id="nasabah-img" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Foto nasabah. Jika tidak ada foto, maka akan diganti dengan icon user"></div>
+		      		<!-- <div id="nasabah-img" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Foto nasabah. Jika tidak ada foto, maka akan diganti dengan icon user"></div> -->
+		      		<img id="nasabah-img" class="col-md-4" data-toggle="tooltip" data-placement="top" title="Foto nasabah. Jika tidak ada foto, maka akan diganti dengan icon user" src="https://image.flaticon.com/icons/png/128/219/219990.png">
 			      	<div id="nasabah-feedback" class="col-md-8">
 			      		<h3 data-toggle="tooltip" data-placement="left" title="Nama nasabah">Amanda Johnson</h3><br>
-			      		<p data-toggle="tooltip" data-placement="right" title="Tanggapan nasabah">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			      		<p data-toggle="tooltip" data-placement="right" title="Tanggapan nasabah">Event Bank BTN seru.... Hadiahnya juga WOW...</p>
 			      	</div>
 		      	</div>
 		      </div>
@@ -236,31 +288,31 @@
 </div>
 
 	<div class="jumbotron text-center">
-		<h1>Lorem ipsum dolor sit amet</h1><br><br>
+		<h1>Informasi yang Anda Butuhkan Saat Ini</h1><br><br>
 		<div class="card col-md-5 col-sm-12 col-12 d-inline-block">
-			<div class="card-img-top bg-info" data-toggle="tooltip" data-placement="top" title="Thumbnail artikel" style="width: 100%; height: 300px;"></div>
-		  <!-- <img class="card-img-top" src="img_avatar1.png" alt="Card image"> -->
-		  <div class="card-body">
-		    <h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Judul artikel"><a href="#">Artikel 1</a></h4>
-		    <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="Preview artikel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			
+		  <img class="card-img-top" src="images/02_BTN_MasterBrand.jpg" alt="Card image"data-toggle="tooltip" data-placement="top" title="Thumbnail artikel" style="width: 100%; height: 300px;">
+		  <div class="card-body">	
+		    <h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Judul artikel"><a href="#">LELANG PENGADAAN PERANGKAT CONTACT CENTER BANK BTN</a></h4>
+		    <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="Preview artikel">PT. Bank Tabungan Negara (Persero) Tbk akan melaksanakan Pelelangan Pengadaan Lelang Pengadaan Perangkat Contact Center Bank BTN, dengan ketentuan & persyaratan sebagai berikut.</p>
 		  </div>
 		</div>
 
 		<div class="card col-md-5 col-sm-12 col-12 d-inline-block">
-			<div class="card-img-top bg-info" data-toggle="tooltip" data-placement="top" title="Thumbnail artikel" style="width: 100%; height: 300px;"></div>
-		  <!-- <img class="card-img-top" src="img_avatar1.png" alt="Card image"> -->
+			
+		  <img class="card-img-top" src="images/02_BTN_MasterBrand.jpg" alt="Card image"data-toggle="tooltip" data-placement="top" title="Thumbnail artikel" style="width: 100%; height: 300px;">
 		  <div class="card-body">
-		    <h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Judul artikel"><a href="#">Artikel 2</a></h4>
-		    <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="Preview artikel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		    <h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Judul artikel"><a href="#">LELANG PENGADAAN KONSULTASI PENDAMPINGAN ROLL OUT NASIONAL STRATEGIS BTN</a></h4>
+		    <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="Preview artikel">PT. Bank Tabungan Negara (Persero) Tbk akan melaksanakan Pelelangan Pengadaan Jasa Roll Out Nasional Transformasi Strategis BTN, dengan ketentuan dan persyaratan sebagai berikut .</p>
 		  </div>
 		</div>
 
 		<div class="card col-md-5 col-sm-12 col-12 d-inline-block">
-			<div class="card-img-top bg-info" data-toggle="tooltip" data-placement="top" title="Thumbnail artikel" style="width: 100%; height: 300px;"></div>
-		  <!-- <img class="card-img-top" src="img_avatar1.png" alt="Card image"> -->
+
+		  <img class="card-img-top" src="images/02_BTN_MasterBrand.jpg" alt="Card image"data-toggle="tooltip" data-placement="top" title="Thumbnail artikel" style="width: 100%; height: 300px;">
 		  <div class="card-body">
-		    <h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Judul artikel"><a href="#">Artikel 3</a></h4>
-		    <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="Preview artikel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		    <h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Judul artikel"><a href="#">LELANG PENGADAAN SENTRALISASI ALIH DAYA COLLECTOR UNIT USAHA SYARIAH (UUS) BANK BTN</a></h4>
+		    <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="Preview artikel">PT. Bank Tabungan Negara (Persero) Tbk akan melaksanakan Pelelangan Pengadaan Sentralilsasi Alih Daya Collector Unit Usaha Syariah (UUS) Bank BTN, dengan ketentuan & persyaratan.</p>
 		  </div>
 		</div>
 	</div>
@@ -281,7 +333,7 @@
 
           <!-- Content -->
           <h5 class="font-weight-bold text-uppercase mb-4" data-toggle="tooltip" data-placement="right" title="Bisa diganti dengan logo Bank BTN">Bank BTN</h5>
-          <p data-toggle="tooltip" data-placement="bottom" title="Deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p data-toggle="tooltip" data-placement="bottom" title="Deskripsi">Copyright 2017 Bank Tabungan Negara BTN terdaftar dan diawasi oleh OJK Terdepan dan terpercaya dalam memfasilitasi sektor perumahan dan jasa layanan keuangan keluarga.</p>
 
         </div>
         <!-- Grid column -->
@@ -297,22 +349,22 @@
           <ul class="list-unstyled">
             <li>
               <p>
-                <a href="#!">Link</a>
+                <a href="#!">BTN Cash Management</a>
               </p>
             </li>
             <li>
               <p>
-                <a href="#!">Link</a>
+                <a href="#!">BTN Internet Banking</a>
               </p>
             </li>
             <li>
               <p>
-                <a href="#!">Link</a>
+                <a href="#!">BTN Syariah</a>
               </p>
             </li>
             <li>
               <p>
-                <a href="#!">Link</a>
+                <a href="#!">Kartu Suka-Suka</a>
               </p>
             </li>
           </ul>
